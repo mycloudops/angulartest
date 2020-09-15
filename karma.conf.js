@@ -31,6 +31,7 @@ module.exports = function (config) {
         flags: [
           '--headless','--disable-gpu',
           '--no-sandbox'
+        ]
      }
     },
     browsers: ['ChromeHeadless'],
