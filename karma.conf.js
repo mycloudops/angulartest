@@ -13,6 +13,7 @@ module.exports = function (config) {
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     files: [
+    { pattern: 'node_modules/babel-polyfill/browser.js', instrument: false},
     'node_modules/es6-shim/es6-shim.js'
     ],
     client: {
