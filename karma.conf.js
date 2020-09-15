@@ -32,10 +32,12 @@ module.exports = function (config) {
           '--headless','--disable-gpu',
           '--no-sandbox',
           '--remote-debugging-port=9222']
+          '--user-data-dir=/tmp/chrome-test',
+          '--disable-web-security'
      }
     },
     browsers: ['ChromeHeadless'],
-    singleRun: true,
+    singleRun: false,
     restartOnFileChange: true
   });
 };
